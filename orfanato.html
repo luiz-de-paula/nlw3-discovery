@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Abrigo Porto Real / Happy</title>
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/css/animations.css">
+    <link rel="stylesheet" href="./public/css/orfanato.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./public/images/logo-icon.png">
+</head>
+
+<body>
+    <div id="orfanato">
+        <aside class="animate-right sidebar">
+            <img src="./public/images/map-marker.svg" alt="Happy">
+            <footer>
+                <button onclick="history.back()">
+                    <img src="./public/images/arrow-back.svg" alt="Voltar a Home">
+                </button>
+            </footer>
+
+        </aside>
+        <main>
+            <div class="orfa-details">
+                <img src="./public/images/home.jpg" alt="Casa Abrigo">
+                <div class="images">
+                    <button onclick="selectImage(event)" class="active" type="button">
+                        <img src="https://source.unsplash.com/random?id=1" alt="Casa Abrigo">
+                    </button onclick="selectImage(event)">
+
+                    <button onclick="selectImage(event)" type="button">
+                        <img src="https://source.unsplash.com/random?id=2" alt="Casa Abrigo">
+                    </button>
+
+                    <button onclick="selectImage(event)" type="button">
+                        <img src="https://source.unsplash.com/random?id=3" alt="Casa Abrigo">
+                    </button>
+
+                    <button onclick="selectImage(event)" type="button">
+                        <img src="https://source.unsplash.com/random?id=4" alt="Casa Abrigo">
+                    </button>
+
+                    <button onclick="selectImage(event)" type="button">
+                        <img src="https://source.unsplash.com/random?id=5" alt="Casa Abrigo">
+                    </button>
+
+                    <button onclick="selectImage(event)" type="button">
+                        <img src="https://source.unsplash.com/random?id=6" alt="Casa Abrigo">
+                    </button>
+                </div>
+                <div class="orfa-details-content">
+                    <h1>Casa Abrigo Porto Real - RJ</h1>
+
+                    <p>Presta assistencia a crianças e adolecentes vitimas <br> de maus tratos e em situação de vulnerabilidade e fome.</p>
+                    <div class="map-container">
+                        <div id="mapid"></div>
+
+                        <footer>
+                            <a href="https://www.google.com.br/maps/place/R.+Andr%C3%A9+Luiz,+238+-+Nova+Col%C3%B4nia,+Porto+Real+-+RJ,+27570-000/@-22.4221638,-44.2853376,17z/data=!3m1!4b1!4m5!3m4!1s0x9e8f9c343f1ab3:0x839e7b41d88c3a58!8m2!3d-22.4221688!4d-44.2831489">Ver rotas no Google Maps</a>
+                        </footer>
+
+                    </div>
+
+                    <hr>
+                    <h2>Instruções para visita</h2>
+                    <p>Venha fazer uma visita e traga muito amor e paciência para dar.</p>
+
+
+
+                    <div class="open-details">
+                        <div class="hour">
+                            <img src="./public/images/clock.svg" alt="horario de funcionamento"> Horario de visitas das 08:00hs até 18:00hs.
+                        </div>
+                        <div class="open-on-weekends">
+                            <img src="./public/images/info.svg" alt="Informações"> Atendemos fim de semana.
+                        </div>
+                    </div>
+                    <button class="primary-button" type="button">
+                        <img src="./public/images/whatsapp.svg" alt="whatsapp">
+                        Entrar em contato.
+                    </button>
+
+                </div>
+            </div>
+
+
+        </main>
+
+
+    </div>
+    <script src="./public/scripts/orfanato.js"></script>
+</body>
+
+</html>
