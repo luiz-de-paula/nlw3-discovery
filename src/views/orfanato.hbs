@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt_br">
 
 <head>
     <meta charset="UTF-8">
@@ -12,27 +12,31 @@
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 
-    <link rel="stylesheet" href="./public/css/main.css">
-    <link rel="stylesheet" href="./public/css/animations.css">
-    <link rel="stylesheet" href="./public/css/orfanato.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/orfanato.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/map.css">
+    <link rel="stylesheet" href="/css/buttons.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="icon" href="./public/images/logo-icon.png">
+    <link rel="icon" href="/images/logo-icon.png">
 </head>
 
 <body>
     <div id="orfanato">
         <aside class="animate-right sidebar">
-            <img src="./public/images/map-marker.svg" alt="Happy">
+            <img src="/images/map-marker.svg" alt="Happy">
             <footer>
                 <button onclick="history.back()">
-                    <img src="./public/images/arrow-back.svg" alt="Voltar a Home">
+                    <img src="/images/arrow-back.svg" alt="Voltar a Home">
                 </button>
             </footer>
 
         </aside>
         <main>
             <div class="orfa-details">
-                <img src="./public/images/home.jpg" alt="Casa Abrigo">
+                <img src="/images/home.jpg" alt="Casa Abrigo">
                 <div class="images">
                     <button onclick="selectImage(event)" class="active" type="button">
                         <img src="https://source.unsplash.com/random?id=1" alt="Casa Abrigo">
@@ -79,14 +83,14 @@
 
                     <div class="open-details">
                         <div class="hour">
-                            <img src="./public/images/clock.svg" alt="horario de funcionamento"> Horario de visitas das 08:00hs até 18:00hs.
+                            <img src="/images/clock.svg" alt="horario de funcionamento"> Horario de visitas das 08:00hs até 18:00hs.
                         </div>
                         <div class="open-on-weekends">
-                            <img src="./public/images/info.svg" alt="Informações"> Atendemos fim de semana.
+                            <img src="/images/info.svg" alt="Informações"> Atendemos fim de semana.
                         </div>
                     </div>
                     <button class="primary-button" type="button">
-                        <img src="./public/images/whatsapp.svg" alt="whatsapp">
+                        <img src="/images/whatsapp.svg" alt="whatsapp">
                         Entrar em contato.
                     </button>
 
@@ -98,7 +102,7 @@
 
 
     </div>
-    <script src="./public/scripts/orfanato.js"></script>
+    <script src="/scripts/orfanato.js"></script>
 </body>
 
 </html>
